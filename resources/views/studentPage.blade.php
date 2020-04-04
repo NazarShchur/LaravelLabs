@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <title>Laravel</title>
-</head>
-
-<body>
+@extends('app')
+@section('title', 'schools')
+@section('content')
 <h1>{{$student->first_name}}</h1>
 <h1>{{$student->second_name}}</h1>
 <h1>Student of {{$student->school->name}}</h1>
@@ -33,4 +29,4 @@
     </form>
          @endif
 @endforeach
-</body>
+@endsection

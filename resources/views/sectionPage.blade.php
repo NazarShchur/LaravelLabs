@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <title>Laravel</title>
-</head>
-
-<body>
+@extends('app')
+@section('title', 'schools')
+@section('content')
 <h1>{{$section->name}} in {{$section->school->name}}</h1>
 <h2>Attenders</h2>
 @foreach($section->students as $student)

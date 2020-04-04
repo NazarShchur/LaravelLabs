@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <title>Laravel</title>
-</head>
-
-<body>
+@extends('app')
+@section('title', 'schools')
+@section('content')
 <h1 style="text-align: center"> {{$school->name}}</h1>
 <div style="float: left">
     <h2>Create new Student</h2>
@@ -45,5 +41,4 @@
         <p></p>
     @endforeach
 </div>
-
-</body>
+@endsection
